@@ -8,5 +8,5 @@ clean:
 
 $(SLUGS:=.html):
 	source ../../env/bin/activate; \
-	python ../../processors/jsget.py -o $@ $$(python3.6 ../../processors/get_url_by_filename.py \
+	python ../../processors/jsget.py -o $@ $$(python ../../processors/get_url_by_filename.py \
 	$(patsubst %.html,%,$@))
