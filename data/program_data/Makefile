@@ -1,5 +1,5 @@
 FILE = '../program_links.csv'
-SLUGS = $(shell csvcut -c3 -d'|' $(FILE))
+SLUGS = $(shell source ../../env/bin/activate; csvcut -c3 -d'|' $(FILE))
 
 all: $(SLUGS:=.html)
 
@@ -7,5 +7,6 @@ clean:
 	for f in $(SLUGS:=.html); do rm $$f; done
 
 $(SLUGS:=.html):
-	python ../../processors/jsget.py -o $@ $$(python ../../processors/get_url_by_filename.py \
+	source ../../env/bin/activate; \
+	python ../../processors/jsget.py -o $@ $$(python3.6 ../../processors/get_url_by_filename.py \
 	$(patsubst %.html,%,$@))
