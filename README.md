@@ -1,1 +1,1 @@
-### Makefiles and Python processors for fetching UHD program data from their website.
+### Makefiles and Python processors for fetching UH program data from their website.
