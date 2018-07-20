@@ -1,4 +1,4 @@
-UHD_programs_URL = 'http://publications.uh.edu/content.php?catoid=21&navoid=5494'
+UH_programs_URL = 'http://publications.uh.edu/content.php?catoid=21&navoid=5494'
 GENERATED_FILES = data/UHD_programs_page.html data/program_links.csv program_data
 
 all: $(GENERATED_FILES)
@@ -21,5 +21,5 @@ data/program_links.csv: data/UHD_programs_page.html
 
 data/UHD_programs_page.html:
 	source env/bin/activate; \
-	python processors/jsget.py $(UHD_programs_URL) > $@
+	python processors/jsget.py $(UH_programs_URL) > $@
 
