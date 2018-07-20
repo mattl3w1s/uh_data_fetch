@@ -2,7 +2,7 @@
 
 ### Fetch UH data:
 
-1. Clone the respository
+1. Clone the respository by typing:
 
 ```
 git clone https://github.com/mattl3w1s/uh_data_fetch.git
@@ -10,4 +10,4 @@ git clone https://github.com/mattl3w1s/uh_data_fetch.git
 
 2. Run `make install`.
 
-3. Run `make` and sit back.
+3. Run `make`, sit back and relax.
