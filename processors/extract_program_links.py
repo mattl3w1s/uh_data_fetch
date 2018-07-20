@@ -3,8 +3,8 @@ from lxml import html
 from urllib.parse import urljoin
 from slugify import slugify
 
-URL_ROOT = 'http://catalog.uhd.edu'
-MAJOR_LIST_XPATH = '//body/table/tbody/tr[3]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/ul[1]'
+URL_ROOT = 'http://publications.uh.edu/'
+MAJOR_LIST_XPATH = '//body/table/tbody/tr[3]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/ul[3]'
 
 root = html.parse(sys.stdin)
 ul = root.xpath(MAJOR_LIST_XPATH)[0]
