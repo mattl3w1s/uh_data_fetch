@@ -12,3 +12,4 @@ for row in reader:
     
 sys.stdout.write(urls[slug])
 
+    
