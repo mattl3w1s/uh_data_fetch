@@ -12,6 +12,10 @@ clean:
 	cd data && rm program_links.csv && rm UHD_programs_page.html
 	cd data/program_data && $(MAKE) clean
 
+data/extracted_program_data.csv: program_data
+	source env/bin/activate; \
+	python processors/parse_for_openrefine.py > $@;
+
 program_data: data/program_links.csv
 	cd data/program_data && $(MAKE)
 
