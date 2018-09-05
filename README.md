@@ -1,6 +1,6 @@
 # Makefiles and Python processors for fetching UH program data from their website.
 
-### Requires Python3.6 and pip3.
+### Requires Python3.6 and pip3, and for a chromedriver to be installed and available on system path.
 
 ### To fetch UH program data:
 
